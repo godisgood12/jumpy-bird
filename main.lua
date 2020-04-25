@@ -41,8 +41,11 @@ require 'states/TitleScreenState'
 require 'states/PauseState'
 
 require 'Bird'
+require 'Bronze'
 require 'Pipe'
 require 'PipePair'
+require 'Gold'
+require 'Silver'
 
 -- physical screen dimensions
 WINDOW_WIDTH = 1280
@@ -71,7 +74,7 @@ function love.load()
     math.randomseed(os.time())
 
     -- app window title
-    love.window.setTitle('Fifty Bird')
+    love.window.setTitle('Jumpy Bird')
 
     -- initialize our nice-looking retro text fonts
     smallFont = love.graphics.newFont('font.ttf', 8)

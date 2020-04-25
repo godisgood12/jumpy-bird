@@ -23,4 +23,8 @@ function TitleScreenState:render()
 
     love.graphics.setFont(mediumFont)
     love.graphics.printf('Press Enter', 0, 100, VIRTUAL_WIDTH, 'center')
+
+    -- explains how to get medals
+    love.graphics.printf('6-14pts = bronze, 15-33pts = silver, & 33+pts = gold', 0, 155, VIRTUAL_WIDTH, 'center')
+    
 end
